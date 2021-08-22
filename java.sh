@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo yum install java-1.8.0-openjdk -y   2
 sleep 6
 sudo yum install java-1.8.0-openjdk-devel -y
@@ -9,7 +11,7 @@ sleep 1
 echo 'export JRE_HOME=/usr/lib/jvm/jre' | sudo tee -a /etc/profile
 sleep 1
 source /etc/profile
-sleep 1
+sleep 1 && my-first-command && my-second-command
 echo $JAVA_HOME
 sleep 1
 echo $JRE_HOME
